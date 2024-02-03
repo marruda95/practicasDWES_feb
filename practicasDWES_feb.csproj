@@ -7,4 +7,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.2.1" />
+    <PackageReference Include="Spectre.Console" Version="0.46.0" />
+  </ItemGroup>
+
+   <ItemGroup>
+    <None Update="nlog.config" CopyToOutputDirectory="Always" />
+    </ItemGroup>
+    <ItemGroup>
+    <None Update="Resource/*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
